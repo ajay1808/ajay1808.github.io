@@ -1,0 +1,58 @@
+---
+import "../styles/global.css";
+
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description = "Ajay Kasturirangan — Data Scientist" } = Astro.props;
+const path = new URL(Astro.request.url).pathname;
+
+const navItems = [
+  { href: "/", label: "Home" },
+  { href: "/resume/", label: "Resume" },
+  { href: "/projects/", label: "Projects" },
+  { href: "/blog/", label: "Blog" },
+  { href: "/life/", label: "Life" },
+  { href: "/contact/", label: "Contact" },
+];
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="description" content={description} />
+    <title>{title} · Ajay Kasturirangan</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="wrap">
+        <a class="brand" href="/">Ajay Kasturirangan</a>
+        <nav class="main-nav">
+          {navItems.map((item) => (
+            <a href={item.href} class={path === item.href ? "active" : ""}>{item.label}</a>
+          ))}
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="wrap">
+        <slot />
+      </div>
+    </main>
+    <footer class="site-footer">
+      <div class="wrap">
+        <div>Ajay Kasturirangan · Austin, TX</div>
+        <div class="footer-links">
+          <a href="mailto:ajay.rangan@gmail.com">ajay.rangan@gmail.com</a>
+          <a href="https://linkedin.com/in/ajay-rangan" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://github.com/ajay1808" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

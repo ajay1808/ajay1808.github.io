@@ -1,0 +1,28 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { posts } from "../data/blog";
+---
+
+<Layout title="Blog">
+  <section>
+    <p class="eyebrow">Writing</p>
+    <h1>Blog</h1>
+    <p class="lede">
+      Articles I've written on economic development, transit, and AI adoption, published on TIP
+      Strategies' Insights blog.
+    </p>
+  </section>
+
+  <section>
+    {posts.map((post) => (
+      <div class="card">
+        <p class="meta">{post.date} · {post.source}</p>
+        <h3>{post.title}</h3>
+        <p>{post.excerpt}</p>
+        <div class="btn-row">
+          <a class="btn secondary" href={post.href} target="_blank" rel="noopener">Read full article →</a>
+        </div>
+      </div>
+    ))}
+  </section>
+</Layout>

@@ -1,0 +1,32 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { lifeEntries } from "../data/life";
+---
+
+<Layout title="Life">
+  <section>
+    <p class="eyebrow">Beyond Work</p>
+    <h1>Life &amp; Experiences</h1>
+    <p class="lede">
+      Places I've been, things I've done, and a running log of what I'm up to outside of data science
+      — a photo and a few lines each.
+    </p>
+  </section>
+
+  <section>
+    <div class="grid">
+      {lifeEntries.map((entry) => (
+        <div class="card">
+          {entry.photo ? (
+            <img class="life-photo" src={entry.photo} alt={entry.title} />
+          ) : (
+            <div class="placeholder-photo">Add a photo</div>
+          )}
+          <h3>{entry.title}</h3>
+          {entry.date && <p class="meta">{entry.date}</p>}
+          <p>{entry.blurb}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+</Layout>

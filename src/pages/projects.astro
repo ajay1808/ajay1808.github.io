@@ -1,0 +1,37 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { projects } from "../data/projects";
+---
+
+<Layout title="Projects">
+  <section>
+    <p class="eyebrow">Work</p>
+    <h1>Projects</h1>
+    <p class="lede">
+      A mix of professional work at TIP Strategies, personal builds, and research from grad school —
+      spanning GenAI applications, geospatial analysis, and urban data science.
+    </p>
+  </section>
+
+  <section>
+    <div class="grid">
+      {projects.map((p) => (
+        <div class="card">
+          <h3>{p.title}</h3>
+          {p.period && <p class="meta">{p.period}</p>}
+          <p>{p.summary}</p>
+          <div class="tag-row">
+            {p.tags.map((t) => <span class="tag">{t}</span>)}
+          </div>
+          {p.links && (
+            <div class="btn-row">
+              {p.links.map((l) => (
+                <a class="btn secondary" href={l.href} target="_blank" rel="noopener">{l.label}</a>
+              ))}
+            </div>
+          )}
+        </div>
+      ))}
+    </div>
+  </section>
+</Layout>

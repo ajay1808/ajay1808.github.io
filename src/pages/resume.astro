@@ -1,0 +1,186 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Resume">
+  <section>
+    <p class="eyebrow">Background</p>
+    <h1>Resume</h1>
+    <p class="lede">
+      4+ years across research, data engineering, and analytics — from GenAI research tools at an
+      economic development consultancy to enterprise BI migrations at one of India's largest
+      insurers.
+    </p>
+    <div class="btn-row">
+      <a class="btn" href="/resume.pdf" target="_blank" rel="noopener">Download PDF</a>
+    </div>
+  </section>
+
+  <section>
+    <h2>Experience</h2>
+
+    <div class="timeline-item">
+      <h3>Data Scientist / R&amp;D Analyst</h3>
+      <div class="role-meta">TIP Strategies · Aug 2023 – Present</div>
+      <ul class="bullets">
+        <li>
+          Built local RAG applications (Python, Ollama, LlamaIndex) to query 30 years of reports and
+          summarize SEC filings, cutting research turnaround by 20%.
+        </li>
+        <li>
+          Automated data pipelines via GCP and Python microservices and the Gemini API to generate
+          dataset summaries and update client-facing Tableau dashboards, saving 3 hours per project
+          and driving add-on revenue in 20% of engagements.
+        </li>
+        <li>
+          Forecasted labor impacts using LSTM models and historical job data. Simulated expansion
+          scenarios and reduced forecast variance by 40%, informing workforce planning for a $17B
+          regional investment.
+        </li>
+        <li>
+          Deployed Hugging Face zero-shot classification models to categorize grant data and build
+          knowledge graphs, replacing a rule-based system and improving accuracy by 30%.
+        </li>
+        <li>
+          Built a geospatial transit framework (Python, NetworkX) to process GTFS data and score
+          route capacity. Visualized networks in Tableau for 10+ projects, reducing analysis time
+          from days to minutes.
+        </li>
+        <li>
+          Deployed a local, custom OpenRouteService instance via Docker to process isochrone and
+          drive-time queries, cutting processing time by 50% and enabling rapid site-selection
+          analysis.
+        </li>
+        <li>
+          Built a national freight data framework in Python to analyze supply chain networks and
+          benchmark trade hubs, launching a new analytical product utilized in 3+ client projects.
+        </li>
+        <li>
+          AI adoption champion: drove secure, cross-functional rollout of generative-AI tools across
+          research and outreach workflows.
+        </li>
+      </ul>
+    </div>
+
+    <div class="timeline-item">
+      <h3>Teaching Assistant</h3>
+      <div class="role-meta">New York University · Jan 2023 – Jul 2023</div>
+      <ul class="bullets">
+        <li>
+          Instructed students in supervised and unsupervised machine learning methods, including
+          ensemble methods and anomaly detection, using Python.
+        </li>
+        <li>
+          Supported a disaster-management course utilizing Power BI for spatial and risk analysis.
+        </li>
+        <li>
+          Assisted graduate courses: Machine Learning for Cities; Data Analytics of Urban Systems
+          Failures.
+        </li>
+      </ul>
+    </div>
+
+    <div class="timeline-item">
+      <h3>Data Analyst</h3>
+      <div class="role-meta">ICICI Lombard General Insurance Company · Feb 2021 – Aug 2022</div>
+      <ul class="bullets">
+        <li>
+          Integrated multi-terabyte datasets via Azure (Data Lake, Synapse) to migrate legacy SAP BO
+          dashboards and develop 40+ Power BI financial reports, reducing report rendering time by
+          90% and centralizing operational tracking.
+        </li>
+        <li>
+          Built topographic risk dashboards in Power BI using elevation and precipitation data to
+          identify flood-prone infrastructure across 100+ miles of commercial highway projects,
+          providing clients with realignment strategies to reduce insurance costs and support
+          retention.
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Education</h2>
+
+    <div class="timeline-item">
+      <h3>New York University</h3>
+      <div class="role-meta">M.S. Applied Urban Science and Informatics · Sep 2022 – Aug 2023</div>
+      <ul class="bullets">
+        <li>Graduated with a 3.9 GPA and received the Scholastic Award.</li>
+        <li>
+          Graduate coursework: Applied Data Science, Machine Learning, Deep Learning, Decision
+          Modelling, Complex Systems, Big Data, AI and Data Ethics, Fairness, Urban Data Science
+          Intensive Capstone, Spatial Data Analysis, Public Policy.
+        </li>
+        <li>
+          Conducted statistical analysis on eye-tracker data for an NYU Langone Health study, applying
+          machine learning models to identify behavioral anomalies.
+        </li>
+      </ul>
+    </div>
+
+    <div class="timeline-item">
+      <h3>Manipal Institute of Technology</h3>
+      <div class="role-meta">B.Tech in Electronics &amp; Communication Engineering · Jul 2017 – Jul 2021</div>
+      <ul class="bullets">
+        <li>
+          Minor in Data Science: built a strong quantitative foundation through applied projects and
+          coursework in statistical inference, network analysis, linear algebra, calculus, and R
+          programming.
+        </li>
+        <li>
+          Relevant coursework: Signal Processing, Transforms, Reproducible Research, Data Cleaning,
+          Exploratory Data Analysis, Data Product Design.
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Skills &amp; Expertise</h2>
+
+    <div class="skill-group">
+      <h4>Languages</h4>
+      <p>
+        Python (Pandas, GeoPandas, Rasterio, GDAL, Transformers, LlamaIndex, Streamlit, PySpark,
+        Scikit-learn, TensorFlow, Matplotlib, Seaborn, Folium, Statsmodels, BeautifulSoup, Scrapy),
+        R (ggplot2, Leaflet, Plotly), SQL, DAX, Power Query M Code
+      </p>
+    </div>
+
+    <div class="skill-group">
+      <h4>Machine Learning &amp; AI</h4>
+      <p>
+        Generative AI (RAG, Agentic Modeling), Time-Series (LSTM), NLP (Hugging Face), Predictive
+        Analytics, Anomaly Detection, Neural Networks, SVM, KNN, Clustering, Ensemble Methods,
+        Gaussian Processes, Semi-Supervised Learning, Expectation Maximization, Agent-Based Models,
+        Bayesian Networks
+      </p>
+    </div>
+
+    <div class="skill-group">
+      <h4>LLM Stack &amp; Frameworks</h4>
+      <p>LlamaIndex, LangChain, Ollama, Gemini API, Vector DBs (ChromaDB)</p>
+    </div>
+
+    <div class="skill-group">
+      <h4>Cloud &amp; Data Architecture</h4>
+      <p>GCP (BigQuery, Vertex AI), AWS (S3), REST API Integration, MapReduce, Dask, Apache Spark, Hadoop</p>
+    </div>
+
+    <div class="skill-group">
+      <h4>Visualization &amp; Geospatial</h4>
+      <p>Tableau, Power BI, ArcGIS, OpenRouteService</p>
+    </div>
+
+    <div class="skill-group">
+      <h4>Statistics</h4>
+      <p>ARIMA, A/B Testing, PCA, Resampling Methods, Regression Techniques, Network Analysis</p>
+    </div>
+
+    <div class="skill-group">
+      <h4>Developer Tools</h4>
+      <p>Git, Docker, Advanced Excel, STATA</p>
+    </div>
+  </section>
+</Layout>
