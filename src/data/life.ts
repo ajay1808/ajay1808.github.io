@@ -9,9 +9,16 @@ export interface LifeEntry {
 // Drop a photo in public/life/ and reference it as "/life/your-photo.jpg".
 export const lifeEntries: LifeEntry[] = [
   {
-    title: "Add your first entry",
-    date: "",
+    title: "¡Qué chévere!",
+    date: "Puerto Rico",
     blurb:
-      "This is a placeholder card. Replace it in src/data/life.ts with a real place or experience — a trip, a race, a project outside of work — a photo and a few sentences is plenty.",
+      "A trip to Puerto Rico — golden-hour walks on Condado Beach in San Juan, and a hike out to a waterfall in El Yunque rainforest.",
+    photo: "/life/puerto-rico-beach.jpeg",
+  },
+  {
+    title: "¡Qué chévere!",
+    date: "Puerto Rico",
+    blurb: "El Yunque National Forest — chasing waterfalls through the only tropical rainforest in the US National Forest System.",
+    photo: "/life/puerto-rico-waterfall.jpeg",
   },
 ];
