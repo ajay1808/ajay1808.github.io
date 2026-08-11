@@ -18,13 +18,6 @@ export const lifeEntries: LifeEntry[] = [
   {
     title: "¡Qué chévere!",
     date: "Puerto Rico",
-    blurb:
-      "A trip to Puerto Rico — golden-hour walks on Condado Beach in San Juan, and a hike out to a waterfall in El Yunque rainforest.",
-    photo: "/life/puerto-rico-beach.jpeg",
-  },
-  {
-    title: "¡Qué chévere!",
-    date: "Puerto Rico",
     blurb: "El Yunque National Forest — chasing waterfalls through the only tropical rainforest in the US National Forest System.",
     photo: "/life/puerto-rico-waterfall.jpeg",
   },
