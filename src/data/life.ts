@@ -9,6 +9,13 @@ export interface LifeEntry {
 // Drop a photo in public/life/ and reference it as "/life/your-photo.jpg".
 export const lifeEntries: LifeEntry[] = [
   {
+    title: "FIFA World Cup",
+    date: "Brazil vs. Japan",
+    blurb:
+      "Caught Brazil take on Japan live at NRG Stadium in Houston — a cool experience seeing the World Cup up close.",
+    photo: "/life/fifa-world-cup.jpeg",
+  },
+  {
     title: "¡Qué chévere!",
     date: "Puerto Rico",
     blurb:
