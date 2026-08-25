@@ -28,10 +28,10 @@ export const projects: Project[] = [
   },
   {
     title: "GeoExplorer",
-    period: "2025",
+    period: "2025 · rebuilt 2026",
     summary:
-      "A conversational agent for exploring a neighborhood by address. Built on a ReAct loop with LlamaIndex, it reasons about which tool a question needs — geocoding an address or discovering nearby points of interest through the HERE API — and chains them together to answer follow-ups. Conversational memory persists across the session, so the agent can resolve references to earlier questions instead of treating each query as a cold start.",
-    tags: ["ReAct Agent", "LlamaIndex", "Tool Calling", "HERE API", "Streamlit", "GPT-4o-mini"],
+      "A conversational agent for exploring a neighborhood by address, grounded entirely in live HERE Location Services lookups. Seven tools back the agent loop: free-text and category POI search, an amenity census that answers open-ended 'what is this area like' questions in one call, network travel time by car, foot or bike, and travel-time isolines that shade a real fifteen-minute-walk polygon on the map rather than drawing a radius. Every place the agent finds is written to shared session state, which is what keeps the map beside the chat in sync without a second round of API calls. The system prompt forbids answering from model priors — an empty search result is reported as 'HERE has no record here', not as 'nothing exists here', because a confident guess about a real street corner is worse than an admission of ignorance. Bring-your-own-key across OpenAI, Anthropic, and Google: the provider is inferred from the key's prefix, and since the loop needs nothing but reliable function calling, the prompt and tools are identical on all three. Rebuilt from a 2025 prototype that had shipped with a broken dependency spec and an agent that was reconstructed on every Streamlit rerun, silently wiping its own memory before each message; the rewrite is a tested package with typed HERE responses, retries and TTL caching, and 120 offline tests.",
+    tags: ["LlamaIndex FunctionAgent", "Tool Calling", "Multi-Provider LLM", "HERE API", "Isochrones", "Streamlit", "pydeck"],
     links: [{ label: "GitHub", href: "https://github.com/ajay1808/GeoExplorer-Tech16-Project" }],
     featured: true,
   },
