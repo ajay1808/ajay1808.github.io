@@ -60,30 +60,6 @@ export const projects: Project[] = [
     links: [{ label: "GitHub", href: "https://github.com/ajay1808/StravaApp" }],
   },
   {
-    title: "AI Agents in Economic Development",
-    period: "2025",
-    summary:
-      "Economic development teams frequently face the challenge of implementing strategic plans with limited resources and capacity. This piece explores AI agents as a practical innovation for meeting that challenge, laying out a phased approach for adopting agentic workflows in economic development work.",
-    tags: ["Generative AI", "Agentic Modeling", "Economic Development"],
-    links: [{ label: "Read the article", href: "https://tipstrategies.com/insights/2025/06/ai-agents/" }],
-  },
-  {
-    title: "International Students in the American Workforce",
-    period: "2025",
-    summary:
-      "International students contribute to strengthening economies through their contributions to local industries, culture, and workforce. This piece examines how cities that align academic programs with industry needs and embrace remote work trends are becoming hubs for retaining skilled graduates and fostering long-term economic growth.",
-    tags: ["Talent Strategy", "Workforce Development"],
-    links: [{ label: "Read the article", href: "https://tipstrategies.com/insights/2025/03/how-international-students-strengthen-the-workforce/" }],
-  },
-  {
-    title: "Microtransit for Rural America",
-    period: "2024",
-    summary:
-      "Rural regions face significant challenges accessing essential services compared to urban areas. This piece examines how microtransit — flexible, on-demand transit service — can adapt to rural travel patterns, the funding and setup-cost hurdles facing wider adoption, and the role autonomous vehicles may play in the future of rural transit.",
-    tags: ["Transit Planning", "Rural Mobility"],
-    links: [{ label: "Read the article", href: "https://tipstrategies.com/insights/2024/03/microtransit-for-rural-america/" }],
-  },
-  {
     title: "Mapping STEM Pay Growth",
     period: "2024",
     summary:
