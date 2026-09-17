@@ -36,6 +36,15 @@ export const projects: Project[] = [
     featured: true,
   },
   {
+    title: "Street Safety in NYC",
+    period: "2022 · rebuilt 2026",
+    summary:
+      "Ranks Manhattan street segments by crash risk for a given hour, joining 63,000 collisions onto the city's CSCL centerline so predictions land on an actual block rather than a zip code. The rebuild is really a lesson in rare-event modelling: a crash occupies roughly 0.01% of all segment-hour cells, so the 2022 original trained on a sample that was 775× denser in crashes than reality and reported 82% accuracy — a number that means nothing at a base rate where predicting 'no crash' everywhere scores 99.99%. v2 keeps the case-control sampling but corrects for it, shifting the logistic intercept back onto the population scale via King & Zeng, which brings mean predicted probability within 1.6× of the observed rate. Evaluation moved onto the complete unsampled panel — 7.5 million cells — and onto PR-AUC and lift@k measured against random, segment-length and prior-crash baselines. Gradient boosting reaches 25× lift over random, though a no-model 'this block has had crashes before' baseline already reaches 19×, and the README says so rather than burying it. 34 offline tests, including a synthetic proof that the correction recovers a known population rate while leaving the ranking untouched.",
+    tags: ["Rare-Event Modelling", "Case-Control Sampling", "Calibration", "scikit-learn", "GeoPandas", "PR-AUC"],
+    links: [{ label: "GitHub", href: "https://github.com/ajay1808/Street-Safety-in-NYC" }],
+    featured: true,
+  },
+  {
     title: "Job Search AI Assistant",
     period: "2026",
     summary:
