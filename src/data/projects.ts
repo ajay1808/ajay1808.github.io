@@ -9,6 +9,15 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    title: "Data Center Siting Suitability Map",
+    period: "2026",
+    summary:
+      "An open rebuild of a paid commercial siting product, plus a suitability score the commercial tool doesn't offer. Scoring runs on an H3 resolution-7 grid — 1,467,441 cells of roughly 5.16 km² each across the continental US — rather than on counties, so distance-decay scoring stays uniform nationwide instead of distorting with county size. 29 open federal and NGO layers feed the score, each declared in a source registry rather than hardcoded. The stack is MapLibre GL over static PMTiles with no backend at all, deliberately not the SVG-renderer-plus-hosted-Postgres approach of the product it replaces, which ships 9–11 MB of raw GeoJSON per layer into the browser. Two deliberate modelling choices: poverty rate is carried only as an environmental-justice disclosure flag and never as a positive scoring input, and tribal land is a jurisdictional flag rather than a penalty.",
+    tags: ["H3", "PMTiles", "MapLibre GL", "Vector Tiles", "Site Suitability", "Open Data"],
+    links: [{ label: "GitHub", href: "https://github.com/ajay1808/dc-siting" }],
+    featured: true,
+  },
+  {
     title: "Site Selection Copilot",
     period: "2026",
     summary:
