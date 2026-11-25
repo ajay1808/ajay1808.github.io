@@ -156,48 +156,52 @@ import Layout from "../layouts/Layout.astro";
   <section>
     <h2>Skills &amp; Expertise</h2>
 
+    <!-- Generated from profile/skills.yml in the private personal_profile repo,
+         which is the source of truth. Re-sync there rather than editing here. -->
+
     <div class="skill-group">
-      <h4>Languages</h4>
-      <p>
-        Python (Pandas, GeoPandas, Rasterio, GDAL, Transformers, LlamaIndex, Streamlit, PySpark,
-        Scikit-learn, TensorFlow, Matplotlib, Seaborn, Folium, Statsmodels, BeautifulSoup, Scrapy),
-        R (ggplot2, Leaflet, Plotly), SQL, DAX, Power Query M Code
-      </p>
+      <h4>Programming &amp; Libraries</h4>
+      <p>Python (Pandas, NumPy, Polars, GeoPandas, Shapely, Rasterio, GDAL, NetworkX, Scikit-learn, TensorFlow, Statsmodels), SQL, R (ggplot2, Leaflet, Plotly), DAX, Power Query M</p>
     </div>
 
     <div class="skill-group">
       <h4>Machine Learning &amp; AI</h4>
-      <p>
-        Generative AI (RAG, Agentic Modeling), Time-Series (LSTM), NLP (Hugging Face), Predictive
-        Analytics, Anomaly Detection, Neural Networks, SVM, KNN, Clustering, Ensemble Methods,
-        Gaussian Processes, Semi-Supervised Learning, Expectation Maximization, Agent-Based Models,
-        Bayesian Networks
-      </p>
+      <p>Generative AI (RAG, agentic modeling), Time-series (LSTM, ARIMA), NLP (Hugging Face), Predictive analytics, Anomaly detection, Ensemble methods, Clustering, Causal structure discovery (PC algorithm, causal DAGs)</p>
     </div>
 
     <div class="skill-group">
       <h4>LLM Stack &amp; Frameworks</h4>
-      <p>LlamaIndex, LangChain, Ollama, Gemini API, Vector DBs (ChromaDB)</p>
+      <p>LlamaIndex, LangChain, LangGraph, Ollama, Claude API, Gemini API, Vector DBs (ChromaDB)</p>
     </div>
 
     <div class="skill-group">
       <h4>Cloud &amp; Data Architecture</h4>
-      <p>GCP (BigQuery, Vertex AI), AWS (S3), REST API Integration, MapReduce, Dask, Apache Spark, Hadoop</p>
+      <p>GCP (BigQuery, Vertex AI, Cloud Run), Azure (Data Lake, Synapse), AWS (S3), REST API integration, Columnar formats (Parquet, GeoParquet)</p>
     </div>
 
     <div class="skill-group">
-      <h4>Visualization &amp; Geospatial</h4>
-      <p>Tableau, Power BI, ArcGIS, OpenRouteService</p>
+      <h4>Geospatial</h4>
+      <p>GeoPandas, Shapely, H3 spatial indexing, Vector tiles (PMTiles), MapLibre GL, OpenRouteService, Geocoding (U.S. Census Geocoder and other geocoding APIs), GTFS, ArcGIS, QGIS</p>
+    </div>
+
+    <div class="skill-group">
+      <h4>Visualization &amp; Dashboards</h4>
+      <p>Tableau, Power BI, Streamlit, pydeck, Folium, Matplotlib / Seaborn</p>
     </div>
 
     <div class="skill-group">
       <h4>Statistics</h4>
-      <p>ARIMA, A/B Testing, PCA, Resampling Methods, Regression Techniques, Network Analysis</p>
+      <p>Spatial statistics (Moran's I, PySAL), Regression techniques, PCA, Resampling methods, Network analysis</p>
     </div>
 
     <div class="skill-group">
       <h4>Developer Tools</h4>
-      <p>Git, Docker, Advanced Excel, STATA</p>
+      <p>Git, Docker, LaTeX, Advanced Excel, STATA</p>
+    </div>
+
+    <div class="skill-group">
+      <h4>Certifications</h4>
+      <p>Google Cloud Professional Machine Learning Engineer (in progress); skill badges in Prepare Data for ML APIs and Create ML Models with BigQuery ML</p>
     </div>
   </section>
 </Layout>
